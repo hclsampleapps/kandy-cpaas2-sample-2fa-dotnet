@@ -1,15 +1,16 @@
-# Two Factor Authentication Starter App
+# kandy-cpaas2-sample-2fa-dotnet
 
-This is an elementary  login authentication use case of two-factor authentication via SMS. The main focus of this application is to understand and implement the 2FA flow, so least amount of stress is given to the authentication/login mechanism.
+
+This is an elementary login authentication use-case of two-factor authentication via SMS and Email using dotnet SDK.
+
 
 ## Requirement
 
-To run this starter app, it is recommended to install [Visual Studio](https://visualstudio.microsoft.com/vs/) and open the examples folder in Visual Studio.
+To run this starter app, it is recommended to install [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Installation
-1. Copy `.env.example` and rename to `.env` and add the appropriate values. Check `Configuration` section for more details.
-2. The Visual Studio would install the dependencies automatically.
-3. Select the application that is to be run - 2fa and press the start/play button.
+1. The Visual Studio would install the dependencies automatically.
+2. Select the application that is to be run - 2fa and press the start/play button.
 
 ## Configuration
 There are a few environment variables (check `.env` file) to make the application simpler and help us focus on the key aspects a two-factor authentication system via SMS. Some of the variables are pre-filled and some are left blank which are left on the user to place appropriate values. All the variables are mandatory.
