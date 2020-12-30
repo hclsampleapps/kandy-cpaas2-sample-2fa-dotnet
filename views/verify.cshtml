@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>2FA | Verify</title>
+</head>
+<body>
+    @if (Model != null && Model.Message != null) {
+        <div class="alert alert-@(Model.Type)">
+            <p>@Model.Message</p>
+        </div>
+    }
+    <div>
+        <form action="/verify" method="post">
+            <h2 class="text-center">Verify</h2>
+            <div class="input-group">
+                <label for="code">Verification code</label>
+                <input type="text" id="code" name="code" />
+                <button type="submit">Verify</button>
+            </div>
+        </form>
+        <hr>
+		
+        <form action="/send-code" method="post">
+            <div>
+                <input type="radio" name="type" value="sms" checked /> 2FA via sms
+                <input type="radio" name="type" value="email" /> 2FA via email
+                <button class='verify-button' type="submit">Send 2FA</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
